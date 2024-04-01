@@ -52,7 +52,7 @@ parser.add_argument('--seed', type=int, default=123456,
                     help='random seed')
 parser.add_argument('--local_rank', type=int, default=0,
                     help='compulsory for pytorch launcer')
-parser.add_argument('--model', default='sam-da-track-b', type=str, help='models to train')
+parser.add_argument('--model', default='WATS-DA', type=str, help='models to train')
 args = parser.parse_args()
 
 
