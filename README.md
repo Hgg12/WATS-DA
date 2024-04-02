@@ -1,8 +1,8 @@
 # WATS-DA
-## Wildlif2024 Dataset
+## Wildlife2024 Dataset
 
 ![image](img/Wildlife2024.png)
-### 表格
+### Trackers
 
 
 | Trackers | Description | Language | Trackers | Description | Language |
