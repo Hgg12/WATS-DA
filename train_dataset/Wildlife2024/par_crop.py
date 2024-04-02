@@ -1,4 +1,3 @@
-import NAT
 import cv2
 import numpy as np
 from os.path import join, isdir, isfile
