@@ -46,7 +46,7 @@ sys.path.append(os.getcwd())
 
 logger = logging.getLogger('global')
 parser = argparse.ArgumentParser(description='siamcar tracking')
-parser.add_argument('--cfg', type=str, default=os.getcwd() + '/experiments/udatcar_r50_l234/config.yaml',
+parser.add_argument('--cfg', type=str, default=os.getcwd() + '/experiments/config.yaml',
                     help='configuration of tracking')
 parser.add_argument('--seed', type=int, default=123456,
                     help='random seed')
