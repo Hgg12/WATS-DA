@@ -2,6 +2,7 @@
 ## Wildlife2024 Dataset
 
 ![image](img/Wildlife2024.png)
+Download Wildlife2024, link:https://pan.quark.cn/s/f9aec26b21a5 code：4whM
 ### Trackers
 
 
