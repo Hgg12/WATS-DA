@@ -106,7 +106,7 @@ class SubDataset(object):
         return pick[:self.num_use]
 
     def get_image_anno(self, video, track, frame):
-        if self.name == "NAT"or self.name=="ExDark"or self.name=="DarkFace"or self.name=="Animals"or self.name=="wild"or self.name=="WATB400_1"or self.name=="WATB400_2"or self.name=="WATB2024_3":
+        if self.name == "Wildlife2024_1"or self.name=="Wildlife2024_2"or self.name=="Wildlife2024_3":
             image_path = os.path.join(self.root, video, track, "000000.{:02d}.x.jpg".format(frame))
             frame = "{:06d}".format(frame)
         else:
