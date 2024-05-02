@@ -1,0 +1,102 @@
+
+
+
+META_ARC: "siamban_r50_l234"
+
+BACKBONE:
+    TYPE: "resnet50"
+    KWARGS:
+        used_layers: [2, 3]
+    PRETRAINED: 'pretrained/resnet50.model'
+    TRAIN_LAYERS: ['layer2', 'layer3']
+    TRAIN_EPOCH: 0
+    LAYERS_LR: 0.1
+
+ADJUST:
+    ADJUST: True
+    TYPE: "AdjustAllLayer"
+    KWARGS:
+        in_channels: [512, 1024]
+        out_channels: [256, 256]
+
+ALIGN:
+    ALIGN: true
+    TYPE: "EFM"
+    KWARGS:
+        adj_channel: 256
+
+BAN:
+    BAN: True
+    TYPE: 'MultiBAN'
+    KWARGS:
+        in_channels: [256, 256]
+        cls_out_channels: 2  # if use sigmoid cls, cls_out_channel = 1 else 2
+        weighted: True
+
+POINT:
+    STRIDE: 8
+
+
+TRAIN:
+    EPOCH: 31
+    START_EPOCH: 0 # 0 or resume checkpoint
+    BATCH_SIZE: 16 #32
+    BASE_LR: 0.0015
+    BASE_LR_d: 0.005
+    CLS_WEIGHT: 1.0
+    LOC_WEIGHT: 1.0
+    RANK_CLS_WEIGHT: 0.5
+    RANK_IGR_WEIGHT: 0.25
+    IoU_Gamma: 5
+    PRETRAINED: 'pretrained/SiamPW-RBO-general-LUVN.pth'
+    RESUME: ''
+
+    LR:
+        TYPE: 'log'
+        KWARGS:
+            start_lr: 0.0015
+            end_lr: 0.000015
+    LR_WARMUP:
+        TYPE: 'step'
+        EPOCH: 5
+        KWARGS:
+            start_lr: 0.0003
+            end_lr: 0.0015
+            step: 1
+
+DATASET:
+    NAMES:
+    - 'VID'
+    # - 'YOUTUBEBB'
+    # - 'COCO'
+    # - 'DET'
+    - 'GOT10K'
+    # - 'LaSOT'
+    VIDEOS_PER_EPOCH: 1000000
+   
+    TEMPLATE:
+        SHIFT: 4
+        SCALE: 0.05
+        BLUR: 0.0
+        FLIP: 0.0
+        COLOR: 1.0
+
+    SEARCH:
+        SHIFT: 64
+        SCALE: 0.18
+        BLUR: 0.2
+        FLIP: 0.0
+        COLOR: 1.0
+
+    NEG: 0.2
+    GRAY: 0.0
+
+TRACK:
+    TYPE: 'SiamBANTracker'
+    PENALTY_K: 0.04
+    WINDOW_INFLUENCE: 0.25
+    LR: 0.7
+    EXEMPLAR_SIZE: 127
+    INSTANCE_SIZE: 255
+    BASE_SIZE: 8
+    CONTEXT_AMOUNT: 0.5
