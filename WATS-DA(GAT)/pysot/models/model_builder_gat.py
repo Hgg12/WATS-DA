@@ -20,37 +20,7 @@ from runners.diffusion import Diffusion
 from main import parse_args_and_config
 from models.diffusion import Model
 
-# def get_beta_schedule(beta_schedule, *, beta_start, beta_end, num_diffusion_timesteps):
-#     def sigmoid(x):
-#         return 1 / (np.exp(-x) + 1)
 
-#     if beta_schedule == "quad":
-#         betas = (
-#             np.linspace(
-#                 beta_start ** 0.5,
-#                 beta_end ** 0.5,
-#                 num_diffusion_timesteps,
-#                 dtype=np.float64,
-#             )
-#             ** 2
-#         )
-#     elif beta_schedule == "linear":
-#         betas = np.linspace(
-#             beta_start, beta_end, num_diffusion_timesteps, dtype=np.float64
-#         )
-#     elif beta_schedule == "const":
-#         betas = beta_end * np.ones(num_diffusion_timesteps, dtype=np.float64)
-#     elif beta_schedule == "jsd":  # 1/T, 1/(T-1), 1/(T-2), ..., 1
-#         betas = 1.0 / np.linspace(
-#             num_diffusion_timesteps, 1, num_diffusion_timesteps, dtype=np.float64
-#         )
-#     elif beta_schedule == "sigmoid":
-#         betas = np.linspace(-6, 6, num_diffusion_timesteps)
-#         betas = sigmoid(betas) * (beta_end - beta_start) + beta_start
-#     else:
-#         raise NotImplementedError(beta_schedule)
-#     assert betas.shape == (num_diffusion_timesteps,)
-#     return betas
 
 class Graph_Attention_Union(nn.Module):
     def __init__(self, in_channel, out_channel):
@@ -117,20 +87,7 @@ class ModelBuilder(nn.Module):
         self.backbone = get_backbone(cfg.BACKBONE.TYPE,
                                      **cfg.BACKBONE.KWARGS)
         
-        # build diffusion layer
-        # self.diffusion = Model(config)
-
-        # betas = get_beta_schedule(
-        #     beta_schedule=config.diffusion.beta_schedule,
-        #     beta_start=config.diffusion.beta_start,
-        #     beta_end=config.diffusion.beta_end,
-        #     num_diffusion_timesteps=config.diffusion.num_diffusion_timesteps,
-        # )
-        # betas = self.betas = torch.from_numpy(betas).float().cuda()
-
-        # self.e_zf = nn.Parameter(torch.randn((1,256,13,13)))
-        
-        # self.e_xf = nn.Parameter(torch.randn((1,256,25,25)))
+       
 
         # bulid align track layer
         self.align_track = get_neck(cfg.ALIGN.TYPE,
@@ -184,35 +141,7 @@ class ModelBuilder(nn.Module):
         xf = self.backbone(search)
         
         
-        # zf_diff=zf
-        # zf_times = zf_diff
-        # #for i in range(len(zf)):
-        # n = zf.size(0)
-        # e_zf = self.e_zf.repeat(n,1,1,1)
-        # b = self.betas.cuda()
-        # t = 1*torch.ones(1).cuda().int()
-        # a = (1-b).cumprod(dim=0).index_select(0, t).view(-1, 1, 1, 1)
-        # x = zf * a.sqrt() + e_zf * (1.0 - a).sqrt()
-        # zf_diff, zf_times = self.runner.sample(x, zf, self.diffusion)
-        # zf_diff = zf_diff.cuda()
-        # zf_times = zf_times.cuda()        
-
-        # xf_diff=xf
-        # xf_times = xf_diff
-        # #for i in range(len(xf)):
-        # n = xf.size(0)
-        # e_xf = self.e_xf.repeat(n,1,1,1)
-        # b = self.betas.cuda()
-        # t = 1*torch.ones(1).cuda().int()
-        # a = (1-b).cumprod(dim=0).index_select(0, t).view(-1, 1, 1, 1)
-        # x = xf * a.sqrt() + e_xf * (1.0 - a).sqrt()
-        # xf_diff, xf_times = self.runner.sample(x, xf, self.diffusion)
-        # xf_diff = xf_diff.cuda()
-        # xf_times = xf_times.cuda()
         
-        # zf = self.align_track(zf) 
-        # xf = self.align_track(xf) 
-        # xf = [self.align_track(_zf, _xf) for _zf, _xf in zip(zf, xf)]
         xf = self.align_track(zf, xf)
 
         features = self.attention(zf, xf)
