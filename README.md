@@ -35,7 +35,7 @@ Download Wildlife2024, link:https://pan.quark.cn/s/f9aec26b21a5 code：4whM
 
 ## test
 
-Pre-trained models for testing are acquired：
+Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
 
 | Trackers | model | 
 | :---------- | :-----------: | 
