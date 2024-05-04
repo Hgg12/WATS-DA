@@ -33,3 +33,11 @@ Download Wildlife2024, link:https://pan.quark.cn/s/f9aec26b21a5 code：4whM
 | WATS-DA(CAR) | 0.564 | 0.553 | 0.493 | WATS-DA(GAT) | 0.437 | 0.436 | 0.426 |		
 |WATS-DA(RBO) |	0.533 |	0.524 |	0.498 |WATS-DA(BAN) | 0.530 | 0.512 | 0.470 |
 
+## test
+
+Pre-trained models for testing are acquired：
+
+| Trackers | model | 
+| :---------- | :-----------: | 
+| WATS-DA(CAR) | [car](https://drive.google.com/file/d/17ZX_PwSKtrQGjlVsRaw-VXacc4XIe4yd/view?usp=sharing) | 
+
