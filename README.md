@@ -28,10 +28,10 @@ Download Wildlife2024, link:https://pan.quark.cn/s/f9aec26b21a5 code：4whM
 | TCTrack++ | 0.509 | 0.502 | 0.437 | STMTrack | 0.556| 0.553 | 0.486 |
 | ETTrack | 0.506 | 0.512 | 0.454 | SiamGAT | 0.344 | 0.333 | 0.322 |
 | CTTrack | 0.485 | 0.488 | 0.432 | HiFT | 0.288 | 0.270 | 0.284 |
-| SiamTPN | 0.462 | 0.471 | 0.417 | SiamCAR | 0.527 | 0.501 | 0.423 |
+| SiamTPN | 0.462 | 0.471 | 0.417 | SiamCAR | 0.516 | 0.501 | 0.423 |
 | SiamRBO | 0.548 | 0.539 | 0.464 | SiamBAN | 0.538 | 0.531 | 0.455 |
-| WATS-DA(CAR) | 0.564 | 0.553 | 0.493 | WATS-DA(GAT) | 0.437 | 0.436 | 0.426 |		
-|WATS-DA(RBO) |	0.533 |	0.524 |	0.498 |WATS-DA(BAN) | 0.530 | 0.512 | 0.470 |
+| WATS-DA(CAR) | 0.564 | 0.553 | 0.493 | WATS-DA(GAT) | 0.443 | 0.443 | 0.418 |		
+|WATS-DA(RBO) |	0.552 |	0.538 |	0.495 |WATS-DA(BAN) | 0.535 | 0.519 | 0.462 |
 
 ## test
 
