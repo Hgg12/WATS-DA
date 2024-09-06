@@ -30,7 +30,7 @@ The training set for the dataset Wildlife2024 is available for download on [Driv
 | SiamTPN | 0.471 | 0.481 | 0.425 | SiamBAN | 0.527 | 0.518 | 0.439 |
 | SiamCAR | 0.479 | 0.476 | 0.415 | SiamRBO | 0.510 | 0.498 | 0.443 | 
 | WATS-DA(CAR) | 0.564 | 0.553 | 0.493 |WATS-DA(RBO) |	0.565 |	0.549 |	0.502 |
-SiamBAN | 0.527 | 0.518 | 0.439 |
+
 ### Wildlife2024-test
 
 | Trackers | Precision | Normalized Precision | Success | Trackers | Precision | Normalized Precision | Success |
