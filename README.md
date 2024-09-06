@@ -1,7 +1,7 @@
 # WATS-DA
 ## Wildlife2024 Dataset
 
-![image](img/Wildlife2024.png)
+![image](WATS-DA(CAR)\img\Wildlife2024.png)
 ### Download
 The training set for the dataset Wildlife2024 is available for download on [Drive](https://pan.quark.cn/s/f9aec26b21a5),code：4whM, and the test set is [WATB](https://w-1995.github.io/EvaluationandResult.html).
 ## Trackers
