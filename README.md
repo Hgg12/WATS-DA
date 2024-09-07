@@ -1,7 +1,7 @@
 # WATS-DA
 ## Wildlife2024 Dataset
 
-![image](Wildlife2024.png)
+![image](dataset4.jpg)
 ### Download
 The training set for the dataset Wildlife2024 is available for download on [Drive](https://pan.quark.cn/s/f9aec26b21a5),code：4whM, and the test set is [WATB](https://w-1995.github.io/EvaluationandResult.html).
 The test set has also been open source, you can download from the [website](https://pan.quark.cn/s/6e57db50f112) itself,code:Bwq4
