@@ -13,11 +13,15 @@ This code has been tested on Ubuntu 22.04, Python 3.10.13, Pytorch 2.0.0, and CU
 
 Install HQ-SAM:
 
-```bash install.sh```
+```
+bash install.sh
+```
 
 Install WATS-DA:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 ## Wildlife2024 Dataset
 
 ![image](dataset4.jpg)
