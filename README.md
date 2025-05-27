@@ -119,7 +119,8 @@ The test set has also been open source, you can download from the [website](http
 | SiamTPN | WACV2022 | Python | SiamCAR | CVPR2020 | Python |
 | SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
 
-
+## License
+This project is released under the [Apache 2.0 license](LICENSE).
 
 
 <!-- ## test
