@@ -62,32 +62,16 @@ python crop.py # crop the patches
 python crop.py 511 12
 python gen_json.py
 ```
+* Please download the pre-training model for each baseline tracker prior to training and put it in `./pretrain_model/`:
+| Trackers | model | 
+| :---------- | :-----------: | 
+| siamcar | [herf](https://drive.google.com/file/d/15GXHlNz1OzRnIT4mFyziEvquf3cUVppQ/view?usp=sharing) | 
+| siamrbo | [herf](https://drive.google.com/file/d/1OdBbVLmbRCef3uq9D40JfDy99uAWB3XW/view?usp=sharing) |
 * Train WATS-DA model:
 
 ```
 python ./tool/train.py --model WATS-DA
 ```
-## Dataset
-
-## Wildlife2024 Dataset
-
-![image](dataset4.jpg)
-### Download
-The training set for the dataset Wildlife2024 is available for download on [Drive](https://pan.quark.cn/s/f9aec26b21a5),code：4whM, and the test set is [WATB](https://w-1995.github.io/EvaluationandResult.html).
-The test set has also been open source, you can download from the [website](https://pan.quark.cn/s/6e57db50f112) itself,code:Bwq4
-## Trackers
-
-
-| Trackers | Description | Language | Trackers | Description | Language |
-| :---------- | :-----------: | :---------: | :---------- | :-----------: | :---------: |
-| SMAT | WACV2024 | Python | CNNInMo| IJCAI2022 | Python |
-| SGDViT| ICRA2023 | Python | Stark | ICCV2021 | Python |
-| TCTrack++| TPAMI2023 | Python | MVT | BMVC2023 | Python |
-| ETTrack | WACV2023 | Python | SiamGAT | CVPR2021 | Python |
-| CTTrack | AAAI2023 | Python | HiFT| ICCV2021 | Python |
-| SiamTPN | WACV2022 | Python | SiamCAR | CVPR2020 | Python |
-| SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
-
 ## evaluation
 ### WATB
 
@@ -114,6 +98,28 @@ The test set has also been open source, you can download from the [website](http
 | SiamTPN | 0.773 | 0.848 | 0.667 | SiamBAN | 0.836 | 0.881 | 0.698 |
 | SiamCAR | 0.783 | 0.835 | 0.669 | SiamRBO | 0.822 | 0.866 | 0.690 |
 | WATS-DA(CAR) | 0.845 | 0.876 | 0.738 |WATS-DA(RBO) |	0.857 |	0.889 |	0.750 |
+## Dataset
+
+## Wildlife2024 Dataset
+
+![image](dataset4.jpg)
+### Download
+The training set for the dataset Wildlife2024 is available for download on [Drive](https://pan.quark.cn/s/f9aec26b21a5),code：4whM, and the test set is [WATB](https://w-1995.github.io/EvaluationandResult.html).
+The test set has also been open source, you can download from the [website](https://pan.quark.cn/s/6e57db50f112) itself,code:Bwq4
+## Trackers
+
+
+| Trackers | Description | Language | Trackers | Description | Language |
+| :---------- | :-----------: | :---------: | :---------- | :-----------: | :---------: |
+| SMAT | WACV2024 | Python | CNNInMo| IJCAI2022 | Python |
+| SGDViT| ICRA2023 | Python | Stark | ICCV2021 | Python |
+| TCTrack++| TPAMI2023 | Python | MVT | BMVC2023 | Python |
+| ETTrack | WACV2023 | Python | SiamGAT | CVPR2021 | Python |
+| CTTrack | AAAI2023 | Python | HiFT| ICCV2021 | Python |
+| SiamTPN | WACV2022 | Python | SiamCAR | CVPR2020 | Python |
+| SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
+
+
 
 
 <!-- ## test
@@ -128,14 +134,14 @@ Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dP
 
 <!-- | WATS-DA(BAN) | [ban](https://drive.google.com/file/d/1XNugJ2i0Wqi_31wmXjy8H_5wfsrb5_lA/view?usp=sharing) | -->
 
-## train
+<!-- ## train
 
 Please download the pre-training model for each baseline tracker prior to training.
 
 | Trackers | model | 
 | :---------- | :-----------: | 
 | siamcar | [herf](https://drive.google.com/file/d/15GXHlNz1OzRnIT4mFyziEvquf3cUVppQ/view?usp=sharing) | 
-| siamrbo | [herf](https://drive.google.com/file/d/1OdBbVLmbRCef3uq9D40JfDy99uAWB3XW/view?usp=sharing) |
+| siamrbo | [herf](https://drive.google.com/file/d/1OdBbVLmbRCef3uq9D40JfDy99uAWB3XW/view?usp=sharing) | -->
 <!-- | siamgat | [herf](https://drive.google.com/file/d/1a7P3BlCwFUFIdtcs-1MOXUF5gRuSzt3T/view?usp=sharing) |  -->
 
 <!-- | siamban | [herf](https://drive.google.com/file/d/1ScO4INZDF2iwolsz-eAslI3h4wmhkbuv/view?usp=sharing) | -->
