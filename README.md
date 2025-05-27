@@ -1,5 +1,11 @@
-# Wild Animal Tracking with High-Quality Segment Anything Model and Domain
-Adaptation
+# Wild Animal Tracking with High-Quality Segment Anything Model and Domain Adaptation
+Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wang, Fuming Sun and Haojie Li
+*Corresponding author.
+## Framework
+
+![image](framework.png)
+## Visualization of HSM
+![image](vis.png)
 ## Wildlife2024 Dataset
 
 ![image](dataset4.jpg)
