@@ -24,14 +24,18 @@ Install WATS-DA:
 pip install -r requirements.txt
 ```
 ## Test WATS-DA
-Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
+*Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
 
-Download a model checkpoint below and put it in
+*Download a model checkpoint below and put it in
+
 `./snapshot_WATS-DA/`
 | Trackers | model | 
 | :---------- | :-----------: | 
 | WATS-DA(CAR) | [car](https://drive.google.com/file/d/17ZX_PwSKtrQGjlVsRaw-VXacc4XIe4yd/view?usp=sharing) |
 | WATS-DA(RBO) | [rbo](https://drive.google.com/file/d/1i_eoOnHCUb6AF6K76PDd2UuygjUYQ0mp/view?usp=sharing) | 
+
+*Download [WATB](https://w-1995.github.io/EvaluationandResult.html) dataset and put it in `./test_dataset/WATB`.
+*Download [Wildlife2024-test](https://pan.quark.cn/s/4bffd8e60b77) dataset and put it in `./test_dataset/WATB`.
 
 ## Wildlife2024 Dataset
 
