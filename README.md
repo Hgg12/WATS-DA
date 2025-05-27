@@ -35,7 +35,26 @@ pip install -r requirements.txt
 | WATS-DA(RBO) | [rbo](https://drive.google.com/file/d/1i_eoOnHCUb6AF6K76PDd2UuygjUYQ0mp/view?usp=sharing) | 
 
 *Download [WATB](https://w-1995.github.io/EvaluationandResult.html) dataset and put it in `./test_dataset/WATB`.
-*Download [Wildlife2024-test](https://pan.quark.cn/s/4bffd8e60b77) dataset and put it in `./test_dataset/WATB`.
+
+*Download [Wildlife2024-test](https://pan.quark.cn/s/4bffd8e60b77) dataset and put it in `./test_dataset/Wildlife2024-test`.
+
+*Test and evalute:
+
+```
+cd ./tools
+python test.py --dataset WATB --tracker_name WATS-DA --snapshot ./snapshot_WATS-DA/model.pth --save_dir ./results/WATB/WATS-DA
+```
+## Train WATS-DA
+*The automatic annotation generation module for target domain training samples based on HQ-SAM performs sample annotation generation on Wildlife2024-train:
+
+1. Download the [Wildlife2024-train](https://pan.quark.cn/s/6e57db50f112) dataset and put it in `./train_dataset/Wildlife2024-train`.
+
+2.Automatic sample annotation generation:
+```
+python label_hqsam.py  # Acquire the json file 
+python list.py  # Merge the json file
+python crop.py # crop the patches
+```
 
 ## Wildlife2024 Dataset
 
