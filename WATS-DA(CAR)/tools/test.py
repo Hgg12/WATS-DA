@@ -252,10 +252,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-# wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
-# sudo sh cuda_11.6.0_510.39.01_linux.run
-# wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.19.01_linux.run
-# sudo sh cuda_11.3.0_465.19.01_linux.run
-# https://github.com/vacancy/PreciseRoIPooling
-# RuntimeError: Error building extension '_prroi_pooling'
-# https://github.com/CoinCheung/pytorch-loss/pull/37

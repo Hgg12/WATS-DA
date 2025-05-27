@@ -42,19 +42,32 @@ pip install -r requirements.txt
 
 ```
 cd ./tools
-python test.py --dataset WATB --tracker_name WATS-DA --snapshot ./snapshot_WATS-DA/model.pth --save_dir ./results/WATB/WATS-DA
+python test.py --dataset WATB --snapshot ./snapshot_WATS-DA/model.pth
 ```
 ## Train WATS-DA
 *The automatic annotation generation module for target domain training samples based on HQ-SAM performs sample annotation generation on Wildlife2024-train:
 
 1. Download the [Wildlife2024-train](https://pan.quark.cn/s/6e57db50f112) dataset and put it in `./train_dataset/Wildlife2024-train`.
 
-2.Automatic sample annotation generation:
+2. Automatic sample annotation generation:
 ```
 python label_hqsam.py  # Acquire the json file 
 python list.py  # Merge the json file
 python crop.py # crop the patches
 ```
+* Prepare the source domain dataset TrackingNet:
+1. Download the [TrackingNet](https://github.com/SilvioGiancola/TrackingNet-devkit) dataset and put it in `./train_dataset/TrackingNet`.
+2. Crop the TrackingNet data:
+```
+python crop.py 511 12
+python gen_json.py
+```
+* Train WATS-DA model:
+
+```
+python ./tool/train.py --model WATS-DA
+```
+## Dataset
 
 ## Wildlife2024 Dataset
 
