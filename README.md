@@ -2,7 +2,7 @@
 Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wang, Fuming Sun and Haojie Li
 
   *Corresponding author.
-## Framework
+## :star:Framework
 
 ![image](framework.png)
 ## Visualization of HSM
@@ -24,9 +24,9 @@ Install WATS-DA:
 pip install -r requirements.txt
 ```
 ## Test WATS-DA
-*Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
+* Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
 
-*Download a model checkpoint below and put it in
+* Download a model checkpoint below and put it in
 
 `./snapshot_WATS-DA/`
 | Trackers | model | 
@@ -34,18 +34,18 @@ pip install -r requirements.txt
 | WATS-DA(CAR) | [car](https://drive.google.com/file/d/17ZX_PwSKtrQGjlVsRaw-VXacc4XIe4yd/view?usp=sharing) |
 | WATS-DA(RBO) | [rbo](https://drive.google.com/file/d/1i_eoOnHCUb6AF6K76PDd2UuygjUYQ0mp/view?usp=sharing) | 
 
-*Download [WATB](https://w-1995.github.io/EvaluationandResult.html) dataset and put it in `./test_dataset/WATB`.
+* Download [WATB](https://w-1995.github.io/EvaluationandResult.html) dataset and put it in `./test_dataset/WATB`.
 
-*Download [Wildlife2024-test](https://pan.quark.cn/s/4bffd8e60b77) dataset and put it in `./test_dataset/Wildlife2024-test`.
+* Download [Wildlife2024-test](https://pan.quark.cn/s/4bffd8e60b77) dataset and put it in `./test_dataset/Wildlife2024-test`.
 
-*Test and evalute:
+* Test and evalute:
 
 ```
 cd ./tools
 python test.py --dataset WATB --snapshot ./snapshot_WATS-DA/model.pth
 ```
 ## Train WATS-DA
-*The automatic annotation generation module for target domain training samples based on HQ-SAM performs sample annotation generation on Wildlife2024-train:
+* The automatic annotation generation module for target domain training samples based on HQ-SAM performs sample annotation generation on Wildlife2024-train:
 
 1. Download the [Wildlife2024-train](https://pan.quark.cn/s/6e57db50f112) dataset and put it in `./train_dataset/Wildlife2024-train`.
 
