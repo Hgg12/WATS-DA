@@ -1,2 +1,2 @@
-cd hq-sam
+cd hqsam
 pip install -e .

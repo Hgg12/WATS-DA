@@ -14,7 +14,8 @@ This code has been tested on Ubuntu 22.04, Python 3.10.13, Pytorch 2.0.0, and CU
 Install HQ-SAM:
 
 ```
-bash install.sh
+cd hqsam
+pip install -e .
 ```
 
 Install WATS-DA:
