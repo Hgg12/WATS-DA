@@ -63,16 +63,22 @@ python crop.py 511 12
 python gen_json.py
 ```
 * Please download the pre-training model for each baseline tracker prior to training and put it in `./pretrain_model/`:
+
 | Trackers | model | 
 | :---------- | :-----------: | 
 | siamcar | [herf](https://drive.google.com/file/d/15GXHlNz1OzRnIT4mFyziEvquf3cUVppQ/view?usp=sharing) | 
 | siamrbo | [herf](https://drive.google.com/file/d/1OdBbVLmbRCef3uq9D40JfDy99uAWB3XW/view?usp=sharing) |
+
 * Train WATS-DA model:
 
 ```
 python ./tool/train.py --model WATS-DA
 ```
-## evaluation
+## :smile:evaluation
+* Run eval.py
+```
+python ./tools/eval.py
+```
 ### WATB
 
 | Trackers | Precision | Normalized Precision | Success | Trackers | Precision | Normalized Precision | Success |
@@ -120,7 +126,7 @@ The test set has also been open source, you can download from the [website](http
 | SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
 
 ## License
-This project is released under the [Apache 2.0 license](LICENSE).
+This project is released under the Apache 2.0 license.
 
 
 <!-- ## test
