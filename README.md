@@ -1,4 +1,5 @@
-# WATS-DA
+# Wild Animal Tracking with High-Quality Segment Anything Model and Domain
+Adaptation
 ## Wildlife2024 Dataset
 
 ![image](dataset4.jpg)
