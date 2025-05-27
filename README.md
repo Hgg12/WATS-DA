@@ -7,6 +7,14 @@ Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wa
 ![image](framework.png)
 ## Visualization of HSM
 ![image](vis.png)
+
+## Installation
+This code has been tested on Ubuntu 22.04, Python 3.10.13, Pytorch 2.0.0, and CUDA 12.2 Please install related libraries before running this code:
+
+Install HQ-SAM:
+'bash install.sh'
+Install WATS-DA:
+'pip install -r requirements.txt'
 ## Wildlife2024 Dataset
 
 ![image](dataset4.jpg)
