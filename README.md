@@ -1,6 +1,7 @@
 # Wild Animal Tracking with High-Quality Segment Anything Model and Domain Adaptation
 Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wang, Fuming Sun and Haojie Li
-*Corresponding author.
+
+  *Corresponding author.
 ## Framework
 
 ![image](framework.png)
