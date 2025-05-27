@@ -128,7 +128,11 @@ The test set has also been open source, you can download from the [website](http
 ## License
 This project is released under the Apache 2.0 license.
 
+## Acknowledgments
+We sincerely thank the contribution of following repos:[SAM-DA](https://github.com/vision4robotics/SAM-DA),[SiamRBO](https://github.com/sansanfree/RBO),[SiamCAR](https://github.com/ohhhyeahhh/SiamCAR)和[HQ-SAM](https://github.com/SysCV/SAM-HQ).
 
+## Contact
+If you have any questions, please contact Ganggang Huang at hgg20210315@163.com.
 <!-- ## test
 
 Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
