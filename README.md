@@ -8,7 +8,7 @@ Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wa
 ## :star2:Visualization of HSM
 ![image](vis.png)
 
-## Installation
+## :hammer:Installation
 This code has been tested on Ubuntu 22.04, Python 3.10.13, Pytorch 2.0.0, and CUDA 12.2 Please install related libraries before running this code:
 
 Install HQ-SAM:
@@ -23,7 +23,7 @@ Install WATS-DA:
 ```
 pip install -r requirements.txt
 ```
-## Test WATS-DA
+## :wrench:Test WATS-DA
 * Download pre-trained models for [ar](https://drive.google.com/drive/folders/1_dPapMvHy1iewJ2MmyWXj3BB-aIlHNLA?usp=sharing) and [re-detection](https://drive.google.com/drive/folders/1yIeq0CCi-JFDECafOA9fPkZSa_v9ILPL?usp=sharing) before testing.Pre-trained models for testing are acquired：
 
 * Download a model checkpoint below and put it in
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 cd ./tools
 python test.py --dataset WATB --snapshot ./snapshot_WATS-DA/model.pth
 ```
-## Train WATS-DA
+## :mag_right:Train WATS-DA
 * The automatic annotation generation module for target domain training samples based on HQ-SAM performs sample annotation generation on Wildlife2024-train:
 
 1. Download the [Wildlife2024-train](https://pan.quark.cn/s/6e57db50f112) dataset and put it in `./train_dataset/Wildlife2024-train`.
