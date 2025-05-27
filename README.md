@@ -5,7 +5,7 @@ Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wa
 ## :star:Framework
 
 ![image](framework.png)
-## Visualization of HSM
+## :star2:Visualization of HSM
 ![image](vis.png)
 
 ## Installation
