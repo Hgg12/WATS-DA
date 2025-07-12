@@ -134,6 +134,18 @@ This project is released under the Apache 2.0 license.
 ## Acknowledgments
 We sincerely thank the contribution of following repos:[SAM-DA](https://github.com/vision4robotics/SAM-DA),[SiamRBO](https://github.com/sansanfree/RBO),[SiamCAR](https://github.com/ohhhyeahhh/SiamCAR)和[HQ-SAM](https://github.com/SysCV/SAM-HQ).
 
+## Citation
+``` 
+@inproceedings{
+anonymous2024wild,
+title={Wild Animal Tracking with High Quality-{SAM} and Domain Adaptation},
+author={Ganggang Huang, Mengyin Wang, Fasheng Wang, Fuming Sun, Haojie Li},
+booktitle={4th Workshop on CV4Animals: Computer Vision for Animal Behavior Tracking and Modeling, In conjunction with CVPR 2024},
+year={2024},
+url={https://openreview.net/forum?id=3LJZexKzis}
+}
+```
+
 ## Contact
 If you have any questions, please contact Ganggang Huang at hgg20210315@163.com.
 <!-- ## test
