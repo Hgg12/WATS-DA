@@ -2,6 +2,9 @@
 Ganggang Huang, Fasheng Wang*, Binbin Wang, Hanwei Li, Mingshu Zhang, Mengyin Wang, Fuming Sun and Haojie Li
 
   *Corresponding author.
+
+## ✉️ News
+* [2024.04.30] The Paper of WATS-DA was Accepted by CVPR 2024 Workshop ([paper](https://drive.google.com/file/d/1LDLmI9Xs2CkaOezgWVm3gNnUr21n2smR/view)).
 ## :star:Framework
 
 ![image](framework.png)
