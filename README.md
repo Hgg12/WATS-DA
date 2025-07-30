@@ -82,6 +82,23 @@ python ./tool/train.py --model WATS-DA
 ```
 python ./tools/eval.py
 ```
+### Trackers
+
+
+| Trackers | Description | Language | Trackers | Description | Language |
+| :---------- | :-----------: | :---------: | :---------- | :-----------: | :---------: |
+| AsymTrack | AAAI2025 | Python | SGLATrack | CVPR2025 | Python |
+| ORTrack | CVPR2025 | Python | SiamABC | WACV2025 | Python |
+| AVTrack | ICML2024 | Python | LiteTrack | ICRA2024| Python |
+| TATrack | TGRS2024 | Python | CLNet | ECCV2020 | Python |
+| SMAT | WACV2024 | Python | CNNInMo| IJCAI2022 | Python |
+| SGDViT| ICRA2023 | Python | Stark | ICCV2021 | Python |
+| TCTrack++| TPAMI2023 | Python | MVT | BMVC2023 | Python |
+| ETTrack | WACV2023 | Python | SiamGAT | CVPR2021 | Python |
+| CTTrack | AAAI2023 | Python | HiFT| ICCV2021 | Python |
+| SiamTPN | WACV2022 | Python | SiamCAR | CVPR2020 | Python |
+| SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
+
 ### WATB
 
 | Trackers | Based |Precision | Normalized Precision | Success | Trackers | Based | Precision | Normalized Precision | Success |
@@ -94,7 +111,10 @@ python ./tools/eval.py
 | SiamTPN | CNN |0.471 | 0.481 | 0.425 | SiamBAN | CNN | 0.527 | 0.518 | 0.439 |
 | SiamCAR | CNN | 0.479 | 0.476 | 0.415 | SiamRBO | CNN | 0.510 | 0.498 | 0.443 | 
 | WATS-DA(CAR) | CNN | 0.564 | 0.553 | 0.493 |WATS-DA(RBO) | CNN | 0.565 |	0.549 |	0.502 |
-| A
+| AsymTrack | CNN | 0.560 | 0.555 | 0.502 | SGLATrack | Transformer | 0.545 | 0.540 | 0.482 |
+| ORTrack | Transformer |0.523 | 0.520 | 0.467 | SiamABC | CNN | 0.538 | 0.537 | 0.476 |
+| AVTrack | Transformer | 0.526 | 0.524 | 0.467 | TATrack | Transformer | 0.509 | 0.508 | 0.454 |
+| LiteTrack | Transformer | 0.556 | 0.547 | 0.492 | CLNet | CNN | 0.504 | 0.503 | 0.428 |
 
 ### Wildlife2024-test
 
@@ -108,6 +128,10 @@ python ./tools/eval.py
 | SiamTPN | CNN |0.773 | 0.848 | 0.667 | SiamBAN | CNN |0.836 | 0.881 | 0.698 |
 | SiamCAR | CNN |0.783 | 0.835 | 0.669 | SiamRBO | CNN |0.822 | 0.866 | 0.690 |
 | WATS-DA(CAR) | CNN |0.845 | 0.876 | 0.738 |WATS-DA(RBO) |	CNN |0.857 |	0.889 |	0.750 |
+| AsymTrack | CNN | 0.859 | 0.895 | 0.752 | SGLATrack | Transformer | 0.859 | 0.904 | 0.745 |
+| ORTrack | Transformer |0.848 | 0.897 | 0.734 | SiamABC | CNN | 0.823 | 0.878 | 0.715 |
+| AVTrack | Transformer | 0.819 | 0.874 | 0.712 | TATrack | Transformer | 0.833 | 0.884 | 0.723 |
+| LiteTrack | Transformer | 0.857 | 0.897 | 0.743 | CLNet | CNN | 0.824 | 0.882 | 0.703 |
 ## Dataset
 
 ## Wildlife2024 Dataset
@@ -116,18 +140,7 @@ python ./tools/eval.py
 ### Download
 The training set for the dataset Wildlife2024 is available for download on [Drive](https://pan.quark.cn/s/f9aec26b21a5),code：4whM, and the test set is [WATB](https://w-1995.github.io/EvaluationandResult.html).
 The test set has also been open source, you can download from the [website](https://pan.quark.cn/s/6e57db50f112) itself,code:Bwq4
-## Trackers
 
-
-| Trackers | Description | Language | Trackers | Description | Language |
-| :---------- | :-----------: | :---------: | :---------- | :-----------: | :---------: |
-| SMAT | WACV2024 | Python | CNNInMo| IJCAI2022 | Python |
-| SGDViT| ICRA2023 | Python | Stark | ICCV2021 | Python |
-| TCTrack++| TPAMI2023 | Python | MVT | BMVC2023 | Python |
-| ETTrack | WACV2023 | Python | SiamGAT | CVPR2021 | Python |
-| CTTrack | AAAI2023 | Python | HiFT| ICCV2021 | Python |
-| SiamTPN | WACV2022 | Python | SiamCAR | CVPR2020 | Python |
-| SiamRBO | CVPR2022 | Python | SiamBAN | CVPR2020 | Python |
 
 ## License
 This project is released under the Apache 2.0 license.
